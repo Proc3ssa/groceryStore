@@ -1,1 +1,26 @@
-<p>walkthrough works!</p>
+<section class="walkthrough">
+    <div class="bubble">
+
+    </div>
+  <div class="container">
+
+    <img [src]=[details.img] alt="">
+    <h2>Easy Shopping & Fesh Finds At Your Fingertips</h2>
+    <p>Your one-stop shop for all your grocery needs. Discover a wide range of products</p>
+
+        <div class="navigators">
+            <div [ngStyle]="{'background-color' : green}" class="one"></div>
+
+            <div [ngStyle]="{'background-color' : ash}" class="two"></div>
+        </div>
+
+         <div class="buttons">
+    <button (click)="skip()" class="skip">Skip</button>
+    <button class="next" (click)="next()">Next</button>
+        </div>
+
+        
+  </div>
+
+ 
+</section>
