@@ -1,0 +1,30 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.welc{
+    @include align-center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: $primary-color;
+
+    img{
+        width: 150px;
+        animation: grow 2s ease-in-out;
+
+        @keyframes grow {
+            from {
+                transform: scale(0.5);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    }
+
+    h1{
+        color: $white;
+        margin-top: -15px;
+    }
+}
+

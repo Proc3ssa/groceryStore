@@ -1,0 +1,32 @@
+
+
+@mixin align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin align-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin align-space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@mixin input-text{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid $ash;
+    border-radius: 4px;
+    font-size: 1rem;
+}
