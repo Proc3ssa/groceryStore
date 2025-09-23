@@ -1,0 +1,41 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+
+.accounttype{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    @include align-center;
+    flex-direction: column;
+}
+
+.options{
+    width: 90%;
+    @include align-space-evenly;
+   
+    button{
+        width: 45%;
+        height: 125px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 2, 0.546);
+        font-size: 16px;
+        font-weight: bold;
+        color: $white;
+        background-color: $primary-color;
+        transition: all 0.3s ease-in-out;
+        
+
+        &:hover{
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            transform: translateY(-5px);
+        }
+
+        img{
+            width: 70px;
+            margin-bottom: -15px;
+        }
+    }
+
+}
