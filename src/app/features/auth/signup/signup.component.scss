@@ -74,8 +74,24 @@
         }
 
         img{
-            width: 20px;
+            width: 25px;
             margin-right: 10px;
+        }
+    }
+}
+
+.login{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+
+    p{
+        // font-size: 1rem;
+        color: black;
+
+        a{
+            color: $primary-color;
+            text-decoration: none;
         }
     }
 }
