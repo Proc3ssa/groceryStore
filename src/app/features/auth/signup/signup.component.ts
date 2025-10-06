@@ -12,4 +12,12 @@ export class SignupComponent {
   username: string = '';
   email: string = '';
   password: string = '';
+  confirmPassword: string = '';
+
+  onsubmit() {
+    console.log('Username:', this.username);
+    console.log('Email:', this.email);
+    console.log('Password', this.password);
+    console.log('Confirm Password', this.confirmPassword);
+  }
 }

@@ -15,4 +15,16 @@ export class InputFieldComponent {
 
   @Output() modelChange = new EventEmitter<any>(); 
 
+  icon = 'fa fa-user';
+
+  ngOnInit() {
+    if (this.type === 'email') {
+      this.icon = 'fa fa-envelope';
+    } else if (this.type === 'password') {
+      this.icon = 'fa fa-lock';
+    } else {
+      this.icon = 'fa fa-user';
+    }
+  }
+
 }

@@ -2,6 +2,9 @@
     <h1>Create <br> An  Account</h1>
 
     <div class="form">
+
+        <form (ngSubmit)="onsubmit()">
+    <!-- username field -->
         <app-input-field
         
          type="text" 
@@ -10,5 +13,38 @@
         
 
       </app-input-field>
+
+       <!-- Email field -->
+      <app-input-field
+        
+         type="email" 
+         placeholder="Enter your email" 
+         [(model)]="email">
+        
+
+      </app-input-field>
+
+
+      <!-- password field  -->
+        <app-input-field
+            
+             type="password" 
+             placeholder="Enter your password" 
+             [(model)]="password">
+        </app-input-field>
+        
+        
+        <!-- confirm password field -->
+        <app-input-field
+            
+             type="password" 
+             placeholder="Confirm your password" 
+             [(model)]="confirmPassword">
+        </app-input-field>
+
+        
+
+        <button>Sign up</button>
+        </form>
     </div>
 </section>
