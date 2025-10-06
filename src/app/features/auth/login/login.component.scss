@@ -1,0 +1,98 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.signup{
+    height: 100vh;
+    width: 90%;
+    margin: 90px auto 60px auto;
+   
+}
+
+.form{
+    width: 100%;
+    height: 300px;
+    margin-top: 60px;
+}
+
+.submit{
+    width: 100%;
+    height: 45px;
+    background-color: $primary-color;
+    color: $white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-block: 30px ;
+
+    &:hover{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+        transform: translateY(-1px);
+    }
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+
+    span {
+        flex: 1;
+        height: 0.5px;
+        background: rgba(128, 128, 128, 0.219);
+        margin: 0 3px;
+    }
+
+    p {
+        margin: 0 10px;
+        color: black;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+.alt-signup{
+    width: 70%;
+    margin: 30px auto;
+    @include align-space-evenly;
+
+    button{
+        width: 45%;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        font-size: 1rem;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+            transform: translateY(-1px);
+        }
+
+        img{
+            width: 25px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.login{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+
+    p{
+        // font-size: 1rem;
+        color: black;
+
+        a{
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
+}
+

@@ -1,0 +1,68 @@
+<section class="signup">
+    <h1>Let's get<br> You Sign In !</h1>
+
+    <div class="form">
+
+        <form (ngSubmit)="onsubmit()">
+    
+       
+
+       <!-- Email field -->
+      <app-input-field
+        
+         type="email" 
+         placeholder="Enter your email" 
+         [(model)]="email">
+        
+
+      </app-input-field>
+
+
+      <!-- password field  -->
+        <app-input-field
+            
+             type="password" 
+             placeholder="Enter your password" 
+             [(model)]="password">
+        </app-input-field>
+        
+        
+      
+
+
+        <br>
+        <!-- submit button -->
+        <button class="submit" type="submit">Sign up</button>
+        </form>
+
+        <!-- or -->
+        <div class="or">
+            <span></span>
+            <p>Or</p>
+            <span></span>
+        </div> 
+        
+        <!-- alternatively sign up with -->
+
+        <div class="alt-signup">
+            <button>
+                <img src="assets/images/google.png" alt="google">
+               
+            </button>
+
+            <button>
+                <img src="assets/images/facebook.png" alt="facebook">
+                
+            </button>
+          </div>  
+
+          <!-- already have an account? -->
+            <div class="login">
+                <p>Already have an account?
+
+                <a routerLink="/auth/login">Log in</a>
+
+                </p>
+            </div>    
+    </div>
+</section>
