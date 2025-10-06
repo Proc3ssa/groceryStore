@@ -32,3 +32,26 @@
         transform: translateY(-1px);
     }
 }
+
+.or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+
+    span {
+        flex: 1;
+        height: 0.5px;
+        background: rgba(128, 128, 128, 0.219);
+        margin: 0 3px;
+    }
+
+    p {
+        margin: 0 10px;
+        color: black;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
