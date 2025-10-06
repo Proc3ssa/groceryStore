@@ -28,30 +28,23 @@ constructor(private router: Router) { }
       "img": 'assets/images/womanbag.png'
     }
 
-    next(){
-      this.page1 = false;
-
-      if(!this.page1){
-      this.details =  {
-      "title": 'Your Utility Grocery Experience Awaits You',
-
-      "desc": 'Your one-stop shop for all your grocery needs.',
-
-      "img": 'assets/images/womanshopping.png'
-    }
-
-    this.ash = '#53B175'
-    this.green = '#C4C4C4'
-    }
-
-    else{
-      this.router.navigate(['/login']);
-    }
-
+    next() {
+      if (this.page1) {
+        this.page1 = false;
+        this.details = {
+          "title": 'Your Utility Grocery Experience Awaits You',
+          "desc": 'Your one-stop shop for all your grocery needs.',
+          "img": 'assets/images/womanshopping.png'
+        };
+        this.ash = '#53B175';
+        this.green = '#C4C4C4';
+      } else {
+        this.router.navigate(['auth/signup']);
+      }
     }
 
     skip(){
-      this.router.navigate(['/login']);
+      this.router.navigate(['auth/signup']);
     }
 
      
