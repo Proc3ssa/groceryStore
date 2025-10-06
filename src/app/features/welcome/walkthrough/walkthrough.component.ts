@@ -39,12 +39,12 @@ constructor(private router: Router) { }
         this.ash = '#53B175';
         this.green = '#C4C4C4';
       } else {
-        this.router.navigate(['auth/signup']);
+        this.router.navigate(['auth/account-type']);
       }
     }
 
     skip(){
-      this.router.navigate(['auth/signup']);
+      this.router.navigate(['auth/account-type']);
     }
 
      
