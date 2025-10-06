@@ -1,0 +1,47 @@
+/* Hide default checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-wrapper {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-checkbox {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  background-color: white;
+  margin-right: 8px;
+  transition: all 0.2s ease;
+}
+
+/* Checkmark (hidden by default) */
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  top: 2px;
+  left: 6px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* Checked state */
+input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: green;
+  border-color: green;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+  opacity: 1;
+}
